@@ -63,3 +63,7 @@ examples/rust-address-fuzzer/findings/
 
 # ─── Test coverage ───────────────────────────────────────────────────────────
 coverage/
+
+# ─── Stryker mutation testing ────────────────────────────────────────────────
+.stryker-tmp/
+reports/mutation/
