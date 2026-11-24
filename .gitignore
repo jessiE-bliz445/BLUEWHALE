@@ -57,3 +57,7 @@ fuzz/artifacts/
 *.user
 .DS_Store
 Thumbs.db
+
+# ─── Stryker mutation testing ────────────────────────────────────────────────
+.stryker-tmp/
+reports/mutation/

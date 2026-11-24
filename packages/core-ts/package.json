@@ -15,7 +15,9 @@
     "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "mutation": "stryker run",
+    "mutation:ci": "stryker run --reporters progress,html,json"
   },
   "peerDependencies": {
     "@stellar/stellar-sdk": ">=10.0.0"
@@ -23,6 +25,9 @@
   "devDependencies": {
     "@redishfish/bluewhale-spec": "workspace:*",
     "@stellar/stellar-sdk": "^12.3.0",
+    "@stryker-mutator/core": "^8.6.0",
+    "@stryker-mutator/vitest-runner": "^8.6.0",
+    "@stryker-mutator/typescript-checker": "^8.6.0",
     "eslint": "^8.56.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
